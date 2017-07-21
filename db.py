@@ -4,7 +4,7 @@ import pymongo
 import config
 
 
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient(config.MONGODB_URI)
 db = client[config.DATABASE]
 
 song = db['song']
