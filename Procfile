@@ -1,1 +1,1 @@
- gunicorn -b 0.0.0.0:$PORT main:worshipizer
+ web: gunicorn -b 0.0.0.0:$PORT worshipizer:app
