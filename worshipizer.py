@@ -16,7 +16,7 @@ app.put = partial(app.route, methods=['PUT'])
 app.delete = partial(app.route, methods=['DELETE'])
 
 
-@app.get('api/ping')
+@app.get('/api/ping')
 def ping():
     return 'pong'
 
