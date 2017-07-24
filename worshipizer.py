@@ -49,6 +49,6 @@ def search_song():
     return logic.search_song(query)
 
 
-@app.get('/api/song/all')
+@app.get('/api/songs')
 def get_all_song():
     return logic.get_all_songs()
