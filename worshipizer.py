@@ -47,3 +47,8 @@ def update_song(song_id):
 def search_song():
     query = request.args.to_dict().get('query')
     return logic.search_song(query)
+
+
+@app.get('/api/song/all')
+def get_all_song():
+    return logic.get_all_songs()

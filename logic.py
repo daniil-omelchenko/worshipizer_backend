@@ -57,3 +57,13 @@ def search_song(query):
             'title': song['metaData']['title']
         })
     return response({'songs': songs})
+
+
+def get_all_songs():
+    songs = []
+    for song in db.song.find({}):
+        songs.append({
+            '_id': song['_id'],
+            'title': song['metaData']['title']
+        })
+    return response({'songs': songs})
